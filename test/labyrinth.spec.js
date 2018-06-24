@@ -51,28 +51,18 @@ describe('Escape', () => {
         })
     });
 
-    describe('Chose Dir', () => {
-        const escape = new Escape(labyrinth.mainLabyrinth);
-
-        	console.log(escape.currentPosition);
-        	escape.currentPosition=[13,27];
-        	escape.checkMap().choseDirection();
-        	//escape.findeWayOut();
-        	console.log(escape.breadСrumbs);
-        	console.dir(escape.availableWays);
-        	console.log(escape.currentPosition);
+    describe('Can finde way out', () => {
+        const	escape1 = new Escape(labyrinth.mainLabyrinth),
+        		escape2 = new Escape(labyrinth.labyrinthWithoutExit);
         	
-       
-        it('Must be bottom', () => {
-            expect(escape.nextMove).to.equal('right');
+        		escape1.findeWayOut();
+        		escape2.findeWayOut();
+        
+        it('Out position must be [30,5]', () => {
+            expect(JSON.stringify(escape1.currentPosition)).to.equal(JSON.stringify([30,5]));
         })
-       
-        
-        
-        
-    });
-
-
-
-    
+        it('Curren position must be same like start position', () => {
+            expect(JSON.stringify(escape2.currentPosition)).to.equal(JSON.stringify([0,1]));
+        })
+   });
 });
