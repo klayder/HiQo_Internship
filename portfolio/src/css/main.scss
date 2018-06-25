@@ -1,0 +1,25 @@
+html {
+	font-size: 10px;
+	font-family: 'Raleway';
+}
+
+@media (max-width: 768px ) {
+	html {
+		font-size: 6px;
+	}
+}
+
+body {
+	
+}
+
+@@include('main-header.scss')
+@@include('main-content__business-card.scss')
+
+
+@keyframes shake{
+	0%, 100% {transform: translateX(0px);}
+	10%,30%,50%,70%,90% {transform: translateX(2px);}
+	20%,40%,60%,80% {transform: translateX(-2px);}
+	
+}

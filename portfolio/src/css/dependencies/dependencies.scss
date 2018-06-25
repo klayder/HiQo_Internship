@@ -1,1 +1,42 @@
 @@include('../../../node_modules/reset-css/sass/_reset.scss')
+@import 'fontawesome/fontawesome.scss';
+@import 'fontawesome/fa-solid.scss';
+@import 'fontawesome/fa-regular.scss';
+@import 'fontawesome/fa-brands.scss';
+
+@font-face{
+	font-family: 'Raleway';
+	src: url("../../fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Raleway';
+	src: url("../../fonts/Raleway/Raleway-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Raleway';
+	src: url("../../fonts/Raleway/Raleway-BoldItalic.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face{
+  font-family: 'Raleway';
+  src: url("../../fonts/Raleway/Raleway-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face{
+	font-family: 'Raleway';
+	src: url("../../fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+
