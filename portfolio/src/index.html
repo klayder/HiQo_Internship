@@ -14,31 +14,31 @@
 		<nav class="main-header__main-navigation">
 			<ul class="main-header__navigation-list">
 				<li class="main-header__navigation-item">
-					<a class="main-header__navigation-link" href="#">
+					<a class="main-header__navigation-link" href="#home">
 						<i class="fas fa-home"></i> 
 						<span class="main-header__navigation-item-wrap"> Home</span>
 					</a>
 				</li> 
 				<li class="main-header__navigation-item">
-					<a class="main-header__navigation-link" href="#">
+					<a class="main-header__navigation-link" href="#about">
 						<i class="fas fa-user-secret"></i> 
 						<span class="main-header__navigation-item-wrap"> About</span>
 					</a>
 				</li> 
 				<li class="main-header__navigation-item">
-					<a class="main-header__navigation-link" href="#">
+					<a class="main-header__navigation-link" href="#hobby">
 						<i class="fas fa-coffee"></i>
 						<span class="main-header__navigation-item-wrap"> Hobby</span>
 					</a>
 				</li> 
 				<li class="main-header__navigation-item">
-					<a class="main-header__navigation-link" href="#">
-						<i class="fas fa-briefcase"></i>
+					<a class="main-header__navigation-link" href="#portfolio">
+						<i class="fas fa-folder-open"></i>
 						<span class="main-header__navigation-item-wrap"> Portfolio</span>
 					</a>
 				</li> 
 				<li class="main-header__navigation-item">
-					<a class="main-header__navigation-link" href="#">
+					<a class="main-header__navigation-link" href="#contacts">
 						<i class="fas fa-phone-square"></i>
 						<span class="main-header__navigation-item-wrap"> Contacts</span>
 					</a>
@@ -69,16 +69,102 @@
 			</li> 
 		</ul>
 	</header>
-	<main class="main-content">
+	<main class="main-content" id="home">
 		<section class="main-content__business-card">
-			<article class="main-content__about-me">
+			<article class="main-content__name-wrap">
 				<h1 class="main-content__my-name">Andrei Sarokin</h1>
 				<p class="main-content__my-skills">HTML-coder/WEB-developer</p>
 				<p class="main-content__my-skills">beginner front-end developer</p>
 			</article>
 		</section>
+		<section class="main-content__about-me" id="about">
+			
+		</section>
+		<section class="main-content__hobby" id="hobby">
+			
+		</section>
+		<section class="main-content__portfolio" id="portfolio">
+			
+		</section>
+		<section class="main-content__contacts" id="contacts">
+			<h2 class="main-content__contacts-heading">Contacts</h2>
+			<div class="main-content__contacts-wrap">
+				<article class="main-content__contacts-ways">
+					<h2 class="main-content__contacts-ways-heading">Ways to contacts with me:</h2>
+					<ul class="main-content__contacts-list">
+						<li class="main-content__contacts-item">
+							<span class="main-content__contacts-info">
+								<i class="fas fa-mobile-alt"></i> Phone call to:</span>
+							<a href="tel:+375336624067" class="main-content__contacts-link">
+								+375336624067
+							</a>
+						</li>
+						<li class="main-content__contacts-item">
+							<span class="main-content__contacts-info">
+								<i class="fas fa-envelope-square"></i> Send email to:</span>
+							<a href="mailto:anderysorokin@gmail.com" class="main-content__contacts-link">
+								anderysorokin@gmail.com
+							</a>
+						</li>
+						<li class="main-content__contacts-item">
+							<span class="main-content__contacts-info">
+								<i class="fab fa-viber"></i> Viber chat:</span>
+							<a href="viber://chat?number=375336624067" class="main-content__contacts-link main-content__contacts-link--desctop">
+								+375336624067
+							</a>
+							<a href="viber://add?number=375336624067" class="main-content__contacts-link main-content__contacts-link--mobile">
+								+375336624067
+							</a>
+						</li>
+						<li class="main-content__contacts-item">
+							<span class="main-content__contacts-info">
+								<i class="fab fa-skype"></i> Skype chat:</span>
+							<a href="skype:klayder1990?chat" class="main-content__contacts-link">
+								klayder1990
+							</a>
+						</li>
+						<li class="main-content__contacts-item">
+							<span class="main-content__contacts-info">
+								<i class="fab fa-telegram-plane"></i> Telegram chat:</span>
+							<a href="tg://resolve?domain=@klayder" class="main-content__contacts-link">
+								@kalyder
+							</a>
+						</li>
+					</ul>
+				</article>
+				<form action="" class="main-content__contacts-form">
+					<h2 class="main-content__form-heading">Have some questions?</h2>
+					<input 	type="text" 
+							class="main-content__form-input" 
+							name="name" 
+							required 
+							placeholder="Your name">
+					<input 	type="text" 
+							class="main-content__form-input" 
+							name="number" 
+							required 
+							placeholder="Your phone number">
+					<input 	type="email" 
+							class="main-content__form-input" 
+							name="email" 
+							required 
+							placeholder="Your email">
+					<textarea 	class="main-content__form-input" 
+								name="message" 
+								placeholder="Your question"></textarea>
+					<input 	type="submit" 
+							class="main-content__form-input"
+							value="Send question">
+
+				</form>
+			</div>
+
+		</section>
 		
 	</main>
+	<footer class="main-footer">
+		
+	</footer>
 
 	<script type="text/javascript" src="js/dependencies/dependencies.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
