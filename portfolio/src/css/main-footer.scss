@@ -1,4 +1,17 @@
 .main-footer {
-	min-height: 10rem;
-	background-color: gray;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	text-align: center;
+	background-color: #5d5d5d;
+	color: #e8e8e8;
+	font-size: 1.8rem;
+}
+
+.main-footer__copyright--link {
+	color: inherit;
+	text-decoration: none;
+	font-style: italic;
+	&:hover{
+		text-shadow: 3px 3px 5px #ffffff;
+	}
 }
