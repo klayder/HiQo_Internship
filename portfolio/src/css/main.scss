@@ -29,6 +29,40 @@ body {
 	flex-grow: 1;
 }
 
+.main-content__heading {
+	font-size: 3.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+	width: 80%;
+	&::before{
+		content: "";
+		display: block;
+		width: 22vw;
+		position: absolute;
+		top: 1.75rem;
+		left: 0;
+		border-bottom: 3px solid #000000;
+	}
+	&::after{
+		content: "";
+		display: block;
+		width: 22vw;
+		position: absolute;
+		top: 1.75rem;
+		right: 0;
+		border-bottom: 3px solid #000000;
+	}
+}
+
+.main-content__section-description {
+	font-size: 2.4rem;
+	font-weight: bold;
+	font-style: italic;
+	margin-top: 2.5rem;
+}
+
 @@include('main-header.scss')
 @@include('main-content__business-card.scss')
 @@include('main-content__about-me.scss')
@@ -44,12 +78,12 @@ section:target {
 
 @keyframes highlight {
     0% { background-color: #FFFF66; }
-    100% { background-color: #FFFFFF; }
+    100% { background-color: #e8e8e8; }
 }
 
 @keyframes shake{
 	0%, 100% {transform: translateX(0px);}
-	10%,30%,50%,70%,90% {transform: translateX(2px);}
-	20%,40%,60%,80% {transform: translateX(-2px);}
+	10%,50%,90% {transform: translateX(2px);}
+	20%,60% {transform: translateX(-2px);}
 	
 }

@@ -1,31 +1,19 @@
 .main-content__contacts {
 	width: 100%;
 	min-height: 100vh;
+	box-sizing: border-box;
+	padding-top: 10rem;
 	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.main-content__contacts-heading {
-	font-size: 3.5rem;
-	font-weight: bold;
-	text-transform: uppercase;
+	
 }
 
 .main-content__contacts-wrap {
-	margin-top: 5rem;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	margin-top: 2rem;
 }
 
-.main-content__contacts-ways-heading,
-.main-content__form-heading {
-	font-size: 2.4rem;
-	font-weight: bold;
-	
-}
 
 .main-content__contacts-ways {
 	width: 50%;
@@ -33,6 +21,7 @@
 	padding-left: 5rem;
 	padding-right: 2rem;
 	min-width: 280px;
+	max-width: 50rem;
 	min-height: 40rem;
 	padding-bottom: 5rem;
 }
@@ -57,6 +46,7 @@
 	font-family: inherit;
 	font-size: inherit;
 	text-decoration: none;
+	font-style: normal;
 	color: #000000;
 	&:hover {
 		text-shadow: 3px 3px 5px #000000;
@@ -100,4 +90,12 @@
 .main-content__form-input[type="submit"] {
 	font-weight: bold;
 	color: #000000;
+}
+
+@media (max-width: 425px ) {
+	.main-content__contacts-form,
+	.main-content__contacts-ways{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 }
