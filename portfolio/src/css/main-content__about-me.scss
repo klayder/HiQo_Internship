@@ -1,7 +1,73 @@
 .main-content__about-me {
 	width: 100%;
-	min-height: 100vh;
 	box-sizing: border-box;
 	padding-top: 10rem;
 	text-align: center;
+}
+
+.main-content__about-me-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin-top: 5rem;
+
+}
+
+.main-content__skills-item {
+	width: 30%;
+	min-width: 150px;
+	font-size: 1.8rem;
+}
+
+.main-content__text-info-wrap {
+	width: 50%;
+	min-width: 320px;
+	box-sizing: border-box;
+}
+
+.main-content__about-me-info {
+	width: 100%;
+	box-sizing: border-box;
+	min-width: 300px;
+	font-size: 2rem;
+	padding-top: 3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	align-items: center;
+}
+
+.main-content__skills-list {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	min-width: 320px;
+}
+
+.main-content__skills-content-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: calc(100% - 3.9rem);
+	margin-top: 1rem;
+
+}
+
+.main-content__skills-content-item {
+	
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	box-sizing: border-box;
+	
+}
+
+.main-content__myFoto {
+	width: 25rem;
+	height: auto;
+	border-radius: 25rem;
+	border: 2px solid #000000;
+
 }
