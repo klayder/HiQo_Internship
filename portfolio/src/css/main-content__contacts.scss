@@ -65,6 +65,12 @@
 	}
 }
 
+@media (min-device-aspect-ratio: 768/1024) {
+	.main-content__contacts {
+		min-height: auto;
+	}
+}
+
 .main-content__contacts-form {
 	@extend .main-content__contacts-ways;
 	min-height: 50rem;
