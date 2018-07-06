@@ -1,8 +1,10 @@
 @@include('../../../node_modules/reset-css/sass/_reset.scss')
-@import 'fontawesome/fontawesome.scss';
+@@include('../../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css')
+
 @import 'fontawesome/fa-solid.scss';
 @import 'fontawesome/fa-regular.scss';
 @import 'fontawesome/fa-brands.scss';
+
 
 @font-face{
 	font-family: 'Raleway';
