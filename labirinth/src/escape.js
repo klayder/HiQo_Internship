@@ -5,8 +5,8 @@ class Escape {
     this.startPosition = [0, 1];
     this.currentPosition = [0, 1];
     this.breadСrumbs = [];
-    this.availableWays;
-    this.branchesCont;
+    this.availableWays = {};
+    this.branchesCont = 0;
     this.labyrinthMap = {};
     this.nextMove = null;
   }
@@ -59,8 +59,8 @@ class Escape {
 
   makeMove() {
     const oppositeSide = {
-      top:	'bottom',
-      bottom:	'top',
+      top: 'bottom',
+      bottom: 'top',
       left: 'right',
       right: 'left',
       back: 'dead end',
@@ -81,22 +81,22 @@ class Escape {
     this.labyrinthMap[positionIndex] = this.availableWays;
 
     switch (this.nextMove) {
-        case 'top':
-            this.currentPosition[0] -= 1;
-            break;
-        case 'bottom':
-            this.currentPosition[0] += 1;
-            break;
-        case 'left':
-            this.currentPosition[1] -= 1;
-            break;
-        case 'right':
-            this.currentPosition[1] += 1;
-            break;
+      case 'top':
+        this.currentPosition[0] -= 1;
+        break;
+      case 'bottom':
+        this.currentPosition[0] += 1;
+        break;
+      case 'left':
+        this.currentPosition[1] -= 1;
+        break;
+      case 'right':
+        this.currentPosition[1] += 1;
+        break;
 
-        default:
-            this.goBack();
-            break;
+      default:
+        this.goBack();
+        break;
     }
 
 
@@ -107,7 +107,7 @@ class Escape {
     let breadСrumb = this.breadСrumbs.shift();
     while (!breadСrumb.branch) {
       breadСrumb = this.breadСrumbs.shift();
-      if (this.breadСrumbs.length == 0) {
+      if (this.breadСrumbs.length === 0) {
         breadСrumb.branch = true;
       }
     }
@@ -118,14 +118,17 @@ class Escape {
 
   findeWayOut() {
     this.checkMap().choseDirection().makeMove();
-    while (this.currentPosition[0] != this.labyrinth.length - 1
-			&& this.currentPosition[0] != 0
-			&& this.currentPosition[1] != this.labyrinth.length - 1
-			&& this.currentPosition[1] != 0) {
+    while (this.currentPosition[0]
+    !== (this.labyrinth.length - 1)
+    && this.currentPosition[0]
+    !== 0 && this.currentPosition[1]
+    !== this.labyrinth.length - 1
+    && this.currentPosition[1]
+    !== 0) {
       this.nextMove = null;
       this.checkMap().choseDirection().makeMove();
     }
-    if (this.currentPosition.join(':') == this.startPosition.join(':')) {
+    if (this.currentPosition.join(':') === this.startPosition.join(':')) {
       console.log('No way out...');
     } else {
       console.log('I finde way out, you can use my map!');
