@@ -119,12 +119,13 @@ class Escape {
   findeWayOut() {
     this.checkMap().choseDirection().makeMove();
     while (this.currentPosition[0]
-    !== (this.labyrinth.length - 1)
-    && this.currentPosition[0]
-    !== 0 && this.currentPosition[1]
-    !== this.labyrinth.length - 1
-    && this.currentPosition[1]
-    !== 0) {
+        !== (this.labyrinth.length - 1)
+        && this.currentPosition[0]
+        !== 0 && this.currentPosition[1]
+        !== this.labyrinth.length - 1
+        && this.currentPosition[1]
+        !== 0
+    ) {
       this.nextMove = null;
       this.checkMap().choseDirection().makeMove();
     }
